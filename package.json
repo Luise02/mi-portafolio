@@ -1,12 +1,16 @@
 {
   "name": "mi-portafolio",
   "version": "1.0.0",
+  "homepage": "https://luise02.github.io/<mi-portafolio>",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "dev:server": "npm --prefix ./server run dev"
+    "predeploy": "npm run build",
+    "type": "module",
+    "dev:server": "npm --prefix ./server run dev",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.6.8",
@@ -20,6 +24,7 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
+    "gh-pages": "^5.0.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
     "vite": "^5.2.0"

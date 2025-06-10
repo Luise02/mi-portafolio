@@ -5,8 +5,10 @@
   "type": "commonjs",
   "scripts": {
     "dev": "ts-node index.ts",
+    "type": "module",
     "build": "tsc",
     "start": "node dist/index.js"
+    
   },
   "dependencies": {
     "axios": "^1.6.8",
